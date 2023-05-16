@@ -12,18 +12,22 @@
     "start-dev": "webpack serve --config webpack.config.js",
     "start-prod": "webpack serve --config webpack.prod.js"
   },
-  "husky": {    
-    "hooks": {      
-      "pre-commit": "lint-staged" 
-    }  
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
-    "*.(js|jsx)": ["npm run lint:write", "git add"]
+    "*.(js|jsx)": [
+      "npm run lint:write",
+      "git add"
+    ]
   },
   "devDependencies": {
     "css-loader": "^6.7.3",
     "css-minimizer-webpack-plugin": "^5.0.0",
     "eslint": "^8.40.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-webpack-plugin": "^4.0.1",
     "html-webpack-plugin": "^5.5.1",
     "husky": "^8.0.3",

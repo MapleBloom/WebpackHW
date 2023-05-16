@@ -16,6 +16,7 @@ module.exports = {
     "rules": {
         "semi": ["error", "always"],
         indent: ["error", 2],
-        "no-console": "error"
+        "no-console": "error",
+        "jsx-a11y/rule-name": 2
     }
 }
