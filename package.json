@@ -10,7 +10,8 @@
     "lint:write": "eslint --debug src/ --fix",
     "build": "webpack",
     "start-dev": "webpack serve --config webpack.config.js",
-    "start-prod": "webpack serve --config webpack.prod.js"
+    "start-prod": "webpack serve --config webpack.prod.js",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
