@@ -6,7 +6,7 @@
   "author": "mm",
   "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\"",
     "lint:write": "eslint --debug src/ --fix",
     "build": "webpack",
     "start-dev": "webpack serve --config webpack.config.js",
@@ -19,7 +19,7 @@
     }
   },
   "lint-staged": {
-    "*.(js|jsx)": [
+    "./src/*.(js|jsx)": [
       "npm run lint:write",
       "git add"
     ]

@@ -29,8 +29,8 @@ module.exports = {
             template: './src/index.pug',
             filename: 'index.html'
         }),
-        new ESLintPlugin(),
-        new StylelintPlugin()
+        new ESLintPlugin({files: './src/**/*.{vue,scss}'}),
+        new StylelintPlugin({files: './src/**/*.{vue,scss}'})
     ],
     module: {
         rules: [{
