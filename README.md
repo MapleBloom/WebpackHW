@@ -19,6 +19,7 @@ Webpack, JS + CSS import, HtmlWebpackPlugin, CssMinimizerPlugin, ESLint, Styleli
 
 ```bash
 npm i
+npm i --save-dev ajv
 ```
 
 development-mode: webpack.config.js
